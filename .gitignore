@@ -1,0 +1,10 @@
+*.ncb
+*.opt
+*.tlh
+*.tli
+*.clw
+*.aps
+*.plg
+Debug
+Release
+Notes

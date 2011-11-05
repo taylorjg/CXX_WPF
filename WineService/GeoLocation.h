@@ -12,7 +12,7 @@ public:
 
 // IEntityMetadata
 public:
-	virtual void GetPropertyDescriptorTable (std::vector<CPropertyDescriptor>& p_PropertyDescriptorTable);
+	virtual void GetPropertyDescriptorTable    (std::vector<CPropertyDescriptor>&    p_PropertyDescriptorTable);
 	virtual void GetComplexTypeDescriptorTable (std::vector<CComplexTypeDescriptor>& p_ComplexTypeDescriptorTable) {}
 
 private:

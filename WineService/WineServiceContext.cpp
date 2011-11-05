@@ -22,15 +22,6 @@ CWineServiceContext::CWineServiceContext (const CString& p_strUrl) :
 
 
 //*****************************************************************************
-//* Function Name: Destructor
-//*   Description: 
-//*****************************************************************************
-CWineServiceContext::~CWineServiceContext ()
-{
-}
-
-
-//*****************************************************************************
 //* Function Name: GetProducts
 //*   Description: 
 //*****************************************************************************

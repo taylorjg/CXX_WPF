@@ -31,9 +31,9 @@
 template<class T>
 struct CEntityCollection
 {
-	typedef boost::shared_ptr<std::vector<boost::shared_ptr<T> > > type;
-	typedef std::vector<boost::shared_ptr<T> >::iterator iterator;
-	typedef std::vector<boost::shared_ptr<T> >::const_iterator const_iterator;
+	typedef typename boost::shared_ptr<std::vector<boost::shared_ptr<T> > > type;
+	typedef typename std::vector<boost::shared_ptr<T> >::iterator iterator;
+	typedef typename std::vector<boost::shared_ptr<T> >::const_iterator const_iterator;
 };
 
 #include "DataServiceQuery.h"

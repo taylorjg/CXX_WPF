@@ -7,7 +7,7 @@
 #include <vector>
 
 template<class T>
-class AFX_EXT_CLASS CDataServiceQuery
+class CDataServiceQuery
 {
 public:
 	CDataServiceQuery (
@@ -18,7 +18,7 @@ public:
 
 	CDataServiceQuery<T>& AddQueryOption (const CString& p_strName, const CString& p_strValue);
 
-	CEntityCollection<T>::type Execute (void);
+	typename CEntityCollection<T>::type Execute (void);
 
 private:
 
@@ -68,9 +68,9 @@ CDataServiceQuery<T>& CDataServiceQuery<T>::AddQueryOption (const CString& p_str
 //*   Description: 
 //*****************************************************************************
 template<class T>
-CEntityCollection<T>::type CDataServiceQuery<T>::Execute (void)
+typename CEntityCollection<T>::type CDataServiceQuery<T>::Execute (void)
 {
-	CEntityCollection<T>::type l_pEntityCollection (new std::vector<boost::shared_ptr<T> > ());
+	typename CEntityCollection<T>::type l_pEntityCollection (new std::vector<boost::shared_ptr<T> > ());
 
 	try {
 		// e.g. http://wine.cloudapp.net/Products()?apikey=...&$filter=(Id eq '91856')

@@ -8,7 +8,7 @@ template<class T>
 class CInternalResponseDecoder : public IResponseDecoder<T>
 {
 public:
-	virtual void DecodeResponse (const _bstr_t& p_sbstrResponse, CEntityCollection<T>::type& p_pEntityCollection);
+	virtual void DecodeResponse (const _bstr_t& p_sbstrResponse, typename CEntityCollection<T>::type& p_pEntityCollection);
 };
 
 //*****************************************************************************
@@ -17,8 +17,8 @@ public:
 //*****************************************************************************
 template<class T>
 void CInternalResponseDecoder<T>::DecodeResponse (
-	const _bstr_t&				p_sbstrResponse,
-	CEntityCollection<T>::type&	p_pEntityCollection)
+	const _bstr_t&							p_sbstrResponse,
+	typename CEntityCollection<T>::type&	p_pEntityCollection)
 {
 	std::vector<_bstr_t> l_EntryProperties;
 	std::vector<_bstr_t>::const_iterator it;

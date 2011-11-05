@@ -15,7 +15,7 @@ public:
 
 	const type_info& GetPropertyType (void) const { return *m_ptiPropertyType; }
 
-	template<class T> SetPropertyValue (const T& p_Value) const
+	template<class T> void SetPropertyValue (const T& p_Value) const
 	{
 		T* l_pT = boost::any_cast<T*>(m_pPropertyValue);
 		*l_pT = p_Value;
@@ -41,7 +41,7 @@ public:
 
 	const type_info& GetComplexTypeType (void) const { return *m_ptiComplexTypeType; }
 
-	template<class T> SetComplexType (T* p_pComplexType) const
+	template<class T> void SetComplexType (T* p_pComplexType) const
 	{
 		boost::shared_ptr<T>* l_ppComplexType = boost::any_cast<boost::shared_ptr<T>*>(m_ppComplexType);
 		l_ppComplexType->reset (p_pComplexType);

@@ -5,7 +5,6 @@ class AFX_EXT_CLASS CWineServiceContext
 {
 public:
 	CWineServiceContext (const CString& p_strUrl);
-	virtual ~CWineServiceContext ();
 
 	ProductDataServiceQueryPtr GetProducts (void);
 

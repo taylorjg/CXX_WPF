@@ -8,3 +8,9 @@
 Debug
 Release
 Notes
+*.opensdf
+*.sdf
+*.suo
+ipch
+*.vcxproj.filters
+*.vcxproj.user

@@ -82,8 +82,10 @@ CWineDemoDlg::CWineDemoDlg (CWnd* pParent /*=NULL*/) :
 	//{{AFX_DATA_INIT(CWineDemoDlg)
 		// NOTE: the ClassWizard will add member initialization here
 	//}}AFX_DATA_INIT
+
 	// Note that LoadIcon does not require a subsequent DestroyIcon in Win32
-	m_hIcon = AfxGetApp ()->LoadIcon (IDR_MAINFRAME);
+	m_hIcon16 = AfxGetApp ()->LoadIcon (IDI_DATAFEEDS_16);
+	m_hIcon32 = AfxGetApp ()->LoadIcon (IDI_DATAFEEDS_32);
 }
 
 
@@ -141,8 +143,8 @@ BOOL CWineDemoDlg::OnInitDialog ()
 
 	// Set the icon for this dialog.  The framework does this automatically
 	//  when the application's main window is not a dialog
-	SetIcon (m_hIcon, TRUE);			// Set big icon
-	SetIcon (m_hIcon, FALSE);		// Set small icon
+	SetIcon (m_hIcon16, FALSE);		// Set small icon
+	SetIcon (m_hIcon32, TRUE);		// Set big icon
 	
 	CWnd* l_pwndPlaceHolder = GetDlgItem (IDC_WINELISTPLACEHOLDER);
 	CRect l_rcPlaceHolder;
@@ -250,7 +252,7 @@ void CWineDemoDlg::OnPaint ()
 		int y = (rect.Height () - cyIcon + 1) / 2;
 
 		// Draw the icon
-		dc.DrawIcon (x, y, m_hIcon);
+		dc.DrawIcon (x, y, m_hIcon16);
 	}
 	else
 	{
@@ -347,5 +349,5 @@ UINT CWineDemoDlg::OnNcHitTest (CPoint point)
 //*****************************************************************************
 HCURSOR CWineDemoDlg::OnQueryDragIcon ()
 {
-	return (HCURSOR) m_hIcon;
+	return (HCURSOR) m_hIcon32;
 }

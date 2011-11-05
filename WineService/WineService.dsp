@@ -135,6 +135,10 @@ SOURCE=.\WineServiceContext.cpp
 # PROP Default_Filter "h;hpp;hxx;hm;inl"
 # Begin Source File
 
+SOURCE=.\apikey.h
+# End Source File
+# Begin Source File
+
 SOURCE=.\DataServiceQuery.h
 # End Source File
 # Begin Source File

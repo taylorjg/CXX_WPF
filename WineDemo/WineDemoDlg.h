@@ -23,7 +23,8 @@ public:
 
 // Implementation
 protected:
-	HICON m_hIcon;
+	HICON m_hIcon16;
+	HICON m_hIcon32;
 
 	// Generated message map functions
 	//{{AFX_MSG(CWineDemoDlg)

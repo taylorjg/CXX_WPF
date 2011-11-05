@@ -73,7 +73,7 @@ CEntityCollection<T>::type CDataServiceQuery<T>::Execute (void)
 	CEntityCollection<T>::type l_pEntityCollection (new std::vector<boost::shared_ptr<T> > ());
 
 	try {
-		// e.g. http://wine.cloudapp.net/Products()?apikey=2fd879a5765785c043cc992b550d2bda&$filter=(Id eq '91856')
+		// e.g. http://wine.cloudapp.net/Products()?apikey=...&$filter=(Id eq '91856')
 		CString l_strUrl = m_strUrl;
 
 		INT l_cchUrl = l_strUrl.GetLength ();

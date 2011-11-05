@@ -144,6 +144,14 @@ SOURCE=.\WineListCtrl.h
 # PROP Default_Filter "ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"
 # Begin Source File
 
+SOURCE=.\res\Datafeeds16.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\Datafeeds32.ico
+# End Source File
+# Begin Source File
+
 SOURCE=.\res\WineDemo.ico
 # End Source File
 # Begin Source File

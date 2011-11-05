@@ -1,9 +1,9 @@
 #ifndef _WineService_h_
 #define _WineService_h_
 
-#include <comdef.h>
+#include "apikey.h"
 
-static const CString API_KEY = "<your api key here>";
+#include <comdef.h>
 
 #define BOOST_DISABLE_ASSERTS
 #include <boost/shared_ptr.hpp>

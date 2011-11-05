@@ -191,6 +191,8 @@ END
 // Icon with lowest ID value placed first to ensure application icon
 // remains consistent on all systems.
 IDR_MAINFRAME           ICON    DISCARDABLE     "res\\WineDemo.ico"
+IDI_DATAFEEDS_32        ICON    DISCARDABLE     "res\\Datafeeds32.ico"
+IDI_DATAFEEDS_16        ICON    DISCARDABLE     "res\\Datafeeds16.ico"
 #endif    // English (U.K.) resources
 /////////////////////////////////////////////////////////////////////////////
 

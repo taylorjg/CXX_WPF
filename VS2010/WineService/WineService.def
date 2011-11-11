@@ -1,0 +1,6 @@
+; WineService.def : Declares the module parameters for the DLL.
+
+LIBRARY      "WineService"
+
+EXPORTS
+    ; Explicit exports can go here

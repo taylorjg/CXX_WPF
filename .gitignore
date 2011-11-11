@@ -5,6 +5,7 @@
 *.clw
 *.aps
 *.plg
+clean.bat
 Debug
 Release
 Notes

@@ -1,0 +1,11 @@
+﻿<Window x:Class="WineDemoUserControlsTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:wduc="clr-namespace:WineDemoUserControls;assembly=WineDemoUserControls"
+        Title="MainWindow" Height="350" Width="525">
+    
+    <Grid Background="Green">
+        <wduc:WineList Padding="10" />
+    </Grid>
+    
+</Window>
